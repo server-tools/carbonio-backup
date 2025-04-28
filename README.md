@@ -1,5 +1,7 @@
-Cmbackup - Backup Script for Zimbra OSE
+Cmbackup - Backup Script for Carbonio CE OSE
 =========
+
+Mirror of: https://www.anahuac.eu/from-zmbackup-to-cmbackup/
 
 Cmbackup is a reliable Bash shell script developed to help you in your daily task to backup and restore mails and accounts from Zimbra Open Source Email Platform. This script is based on another project called [Zmbkpose](https://github.com/bggo/Zmbkpose), and completely compatible with the structure if you have plans on migrate from one to another.
 
