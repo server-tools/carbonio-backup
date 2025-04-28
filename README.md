@@ -22,6 +22,7 @@ chmod +x install.sh
 Below you can see the same how to use from Luca’s github site
 
 Usage
+=========
 
 To check all the options available to Cmbackup, just run cmbackup -h or cmbackup –help. This will return for you a list with all the options, what each one of them does, and the syntax.
 ```
@@ -106,15 +107,18 @@ $ cmbackup -hp
 
 Cmbackup is capable to migrate from TXT to SQLite3, if you want to store you data inside a relative database. The advantage of doing this is more efficiency when trying to list the sessions, and more details when you do this (like the beginning and conclusion of the session). To enable the SQLite3, first edit the option SESSION_TYPE inside cmbackup.conf:
 
-# vim /etc/cmbackup/cmbackup.conf
-
+```
+vim /etc/cmbackup/cmbackup.conf
 ...
 SESSION_TYPE=SQLITE3
+```
+
 With the SQLITE3 option enabled, now you need to migrate your entire sessions.txt to the relative database using the option -m or –migrate. After the end of the migration, you can run all cmbackup commands again.
 
 REMEMBER: at this moment, this migration activity is a only one way road. There is no rollback, and, if you try to do a rollback, you will lose your sessions file.
 
 Scheduling backups
+=========
 
 The installer script automatically creates a cron config file in /etc/cron.d/cmbackup. You can customize backup routes editing that file.
 
